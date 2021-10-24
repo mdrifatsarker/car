@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+:root{
+  --mainBlue:#40ACF1;
+  --transparentBlue:rgba(64, 172, 241,0.7);
+  --mainWhite:#FFFFFF;
+  --mainBlack:#292F36;
+  --mainGrey:rgb(216, 214, 214);
+  --mainYellow:#e3b505;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+}
+/* common */
+@keyframes zoom{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2) translate(-5%);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.navbar{
+  background: var(--mainWhite);
+}
+.navbar-toggler{
+  outline: none!important;
+  color: var(--mainBlue);
+  font-size: 2rem;
+}
+.nav-link{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--mainBlack);
+}
+.nav-link:hover{
+  color: var(--mainBlue);
+}
+.nav-icon{
+  color: var(--mainBlue);
+  font-size: 1.5rem;
+  text-decoration: none!important;
+}
+.nav-icon:hover{
+  color: var(--mainBlack);
+}
+/* header */
+.header{
+  color: var(--mainWhite);
+  clip-path: polygon(100% 0, 100% 94%, 51% 100%, 0 94%, 0 0);
+  overflow: hidden;
+}
+.max-height{
+  background: url(../img/headerBcg.jpeg)center/cover fixed no-repeat;
+  min-height: calc(100vh - 76px);
+  animation: zoom 20s ease-in-out 5s infinite;
+}
+.title-heading{
+  font-size: 1.4rem;
+  background: rgba(0,0,0,0.4);
+  border-left: 0.4rem solid var(--mainBlue);
+}
+.title{
+  font-size: 2.1rem;
+}
+@media screen and (min-width:767px){
+  .title{
+    font-size: 3rem;
+  }
+}
+.title-icon{
+  font-size: 2.4rem;
+  color: var(--mainBlue);
+  text-decoration: none!important;
+}
+.title-icon:hover{
+  color: var(--mainBlue);
+  opacity: 0.4;
+}

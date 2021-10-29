@@ -1,3 +1,8 @@
+/* this website create by Md Rifat Sarker.
+  facebook-profile: https://facebook.com/mdrifat.sarker.501/
+  email : mdrifatsarker8080@gmail.com
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 :root{
@@ -16,6 +21,10 @@ body{
   background: var(--mainWhite);
 }
 /* common */
+  ::selection{
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+  }
 @keyframes zoom{
   0%{
     transform: scale(1);
@@ -257,7 +266,61 @@ body{
     color: var(--mainBlack);
     background: var(--mainYellow);
   }
-/* end of contact section */
+  /* services section */
+  .services{
+    position: relative;
+    min-height: 85vh;
+    max-width: 95vw;
+    margin: 0 auto;
+    clip-path: polygon(0 6%, 100% 0, 99% 93%, 0% 100%);
+  }
+  .video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+  }
+  .video-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--transparentBlue);
+    z-index: -2;
+  }
+  .service{
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    transition: all 1s ease-in-out;
+  }
+  .service:hover{
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+    padding-left: 2.2rem!important;
+  }
+  .service-icon{
+    font-size: 4rem;
+    color: var(--mainYellow);
+  }
+/* customer section */
+  .car-card-body{
+    color: var(--mainGrey);
+  }
+  .customer-img{
+    margin-top: -4rem;
+    border: 0.4rem solid var(--mainWhite);
+  }
+  .customer-name{
+    color: var(--mainBlue);
+  }
 /* footer */
 .footer{
   background: var(--mainBlack);
